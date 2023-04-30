@@ -1,3 +1,0 @@
-    --divider-border-style: solid;
-    --divider-color: var(--e-global-color-primary );
-    --divider-border-width: 2px;
