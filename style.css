@@ -286,3 +286,48 @@ section>img {
     right: 5px;
 
 }
+
+.rodape{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:5px;
+    
+}
+.footer-endereço{
+    
+   padding: 25px;
+   text-align: center;
+}
+.footer-endereço > h3 {
+    
+    font-size: 25px;
+    
+}
+.footer-contato{
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.footer-contato > h3{
+
+    
+    font-size: 25px;
+
+}
+.footer-redes{
+    padding: 25px;
+    text-align: center;
+
+}
+.footer-redes >h3{
+    
+    font-size: 25px;
+}
+.footer-redes img {
+    width: 50px;
+    cursor: pointer;
+}
