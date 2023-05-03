@@ -17,9 +17,10 @@ html, body {
 
 
 header {
-    background-color: black;
+    background-color: #ffff;
     display: flex;
-    align-items: center;
+    margin-left: 100px;
+    
     padding: 20px;
 
 
@@ -28,20 +29,22 @@ header {
 
 }
 
-header>h2 {
+.nome-igreja>h2 {
     font-family: 'Cinzel', serif;
     font-size: 35px;
-    color: rgb(242, 106, 8);
-    text-shadow: 3px 2px 2px rgba(206, 89, 55, 0.77);
-    margin-left: px;
+    color: rgb(242, 105, 7);
+    text-shadow: 1.5px 1.5px 1.5px rgba(217, 40, 5, 0.77);
+    margin-right: 60px;
+    text-align: center;
 
 }
 
 header>nav {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 70px;
     margin-left: 90px;
+    margin-right: 200px;
 
 
 }
@@ -53,31 +56,35 @@ header>nav {
 
     text-decoration: none;
     margin-right: 30px;
-    color: white;
+    color: black;
     align-items: center;
     transition: .3s ease;
     cursor: pointer;
-
+   
 }
 
 .nav-link:hover {
-    opacity: 0.5;
+    
+background-color: rgb(238, 160, 132);
+font-size: 20px;
+transition-delay: 0.3s;
+
 
 
 
 }
 
-.bnt-1 {
-    background-color: white;
+.bnt-radio > a {
+    background-color: rgb(242, 105, 7);
     padding: 20px;
-    padding-top: 10px;
-    width: 200px;
+    
+    width: 250px;
 
     border-radius: 20px;
-    margin-left: 10%;
+    
     font-size: 18px;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    
     border: none;
     cursor: pointer;
     transition: all 0.2ms ease-in-out;
@@ -87,11 +94,17 @@ header>nav {
 
 
 }
+.bnt-radio{
+    padding-top: 40px;
+}
 
 .bnt-1:hover {
 
-    background-color: rgb(244, 123, 36);
-
+    background-color:#ffff;
+    color:black;
+    border: 2px solid black;
+    transition-delay: 0.3s;
+font-size: 20px;
 }
 
 .bnt-1::before {
@@ -100,6 +113,7 @@ header>nav {
     position: relative;
     top: 5px;
     right: 5px;
+    
 
 
 }
@@ -112,7 +126,7 @@ main {
     background-repeat: no-repeat;
     box-shadow: 6px 6px 13px 0px black;
     padding: 5%;
-
+    
 }
 
 main>h2 {
@@ -140,6 +154,7 @@ main>p {
     margin: auto;
     width: 50%;
     box-shadow: 0px 3px 10px 10px black;
+    
 }
 
 .somos>h2 {
@@ -148,6 +163,7 @@ main>p {
 
     font-family: 'Cinzel', serif;
     font-size: 40px;
+    
 
 
 
@@ -155,6 +171,7 @@ main>p {
 
 
 }
+
 
 .h2-somos {
     border-bottom: 2px solid rgb(242, 106, 8);
@@ -205,6 +222,7 @@ iframe {
 
 .meio-online {
     display: flex;
+    margin-bottom: 8%;
 
 
 
@@ -237,6 +255,7 @@ section>img {
 
 
     margin-top: 10%;
+   
 
 
 
@@ -267,6 +286,7 @@ section>img {
     transition: all 0.1ms ease-in-out;
     outline: none;
     cursor: pointer;
+    
 
 
 }
@@ -285,6 +305,97 @@ section>img {
     top: 5px;
     right: 5px;
 
+}
+.form-h2{
+    border: 1px solid black;
+    margin-bottom: 5%;
+    background-color: rgba(242, 105, 8, 0.676);
+}
+.form-h2 > h2{
+    color:black;
+ text-align: center;
+   
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    padding: 40px;
+  
+   
+}
+.form{
+    padding: 20px;
+    display: flex;
+    
+    
+    
+    
+    
+}
+
+.input{
+    
+    background-color: rgba(242, 105, 8, 0.676);
+    box-shadow: 6px 6px 13px 0px black;
+    width: 454px;
+    height: 500px;
+    margin-left: 90px;
+    
+}
+.input >h3{
+    color:black;
+   text-align: center;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+input,textarea{
+    padding-left: 10px;
+    min-width: 300px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.select-options{
+
+    padding-left: 10px;
+    min-width: 300px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.fale-form{
+    margin-left: 20%;
+    padding: 50px;
+    margin-top: 50px;
+}
+.fale-form > h2{
+    color:black;
+    text-align: center;
+     font-size: 30px;
+     font-family: 'Cinzel', serif;
+     padding: 20px;
+     margin-bottom: 20px;
+
+}
+.fale-form > p{
+    font-size: 20px;
+    justify-content: center;
+
+}
+.fale-form > ul,li{
+
+ font-size: 20px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .rodape{
