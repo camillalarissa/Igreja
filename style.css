@@ -11,7 +11,7 @@
 }
 
 html, body {
-    min-height: 100vh;
+   min-height: 100vh;
 }
 
 
@@ -20,7 +20,7 @@ header {
     background-color: #ffff;
     display: flex;
     margin-left: 100px;
-    
+
     padding: 20px;
 
 
@@ -60,31 +60,33 @@ header>nav {
     align-items: center;
     transition: .3s ease;
     cursor: pointer;
-   
+
 }
 
 .nav-link:hover {
+
+    background-color: rgb(238, 160, 132);
+    font-size: 20px;
+    transition-delay: 0.3s;
+    overflow: hidden;
     
-background-color: rgb(238, 160, 132);
-font-size: 20px;
-transition-delay: 0.3s;
 
 
 
 
 }
 
-.bnt-radio > a {
+.bnt-radio>a {
     background-color: rgb(242, 105, 7);
     padding: 20px;
-    
+
     width: 250px;
 
     border-radius: 20px;
-    
+
     font-size: 18px;
     color: black;
-    
+
     border: none;
     cursor: pointer;
     transition: all 0.2ms ease-in-out;
@@ -94,17 +96,18 @@ transition-delay: 0.3s;
 
 
 }
-.bnt-radio{
+
+.bnt-radio {
     padding-top: 40px;
 }
 
 .bnt-1:hover {
 
-    background-color:#ffff;
-    color:black;
+    background-color: #ffff;
+    color: black;
     border: 2px solid black;
     transition-delay: 0.3s;
-font-size: 20px;
+    font-size: 20px;
 }
 
 .bnt-1::before {
@@ -113,7 +116,7 @@ font-size: 20px;
     position: relative;
     top: 5px;
     right: 5px;
-    
+
 
 
 }
@@ -126,7 +129,7 @@ main {
     background-repeat: no-repeat;
     box-shadow: 6px 6px 13px 0px black;
     padding: 5%;
-    
+
 }
 
 main>h2 {
@@ -154,7 +157,7 @@ main>p {
     margin: auto;
     width: 50%;
     box-shadow: 0px 3px 10px 10px black;
-    
+
 }
 
 .somos>h2 {
@@ -163,7 +166,7 @@ main>p {
 
     font-family: 'Cinzel', serif;
     font-size: 40px;
-    
+
 
 
 
@@ -219,6 +222,10 @@ iframe {
     font-family: 'Cinzel', serif;
 
 }
+.iframe-video:hover{
+    scale: 1.1;
+    transition: .5s;
+}
 
 .meio-online {
     display: flex;
@@ -245,7 +252,7 @@ section>img {
 
     margin-top: 30px;
     margin-right: 100px;
-
+    
 
 }
 
@@ -253,9 +260,9 @@ section>img {
 
     font-size: 40px;
 
-
+    font-family: 'Cinzel', serif;
     margin-top: 10%;
-   
+
 
 
 
@@ -286,7 +293,7 @@ section>img {
     transition: all 0.1ms ease-in-out;
     outline: none;
     cursor: pointer;
-    
+
 
 
 }
@@ -304,52 +311,58 @@ section>img {
     position: relative;
     top: 5px;
     right: 5px;
-
+    
 }
-.form-h2{
+
+.form-h2 {
     border: 1px solid black;
     margin-bottom: 5%;
     background-color: rgba(242, 105, 8, 0.676);
 }
-.form-h2 > h2{
-    color:black;
- text-align: center;
-   
+
+.form-h2>h2 {
+    color: black;
+    text-align: center;
+
     font-size: 30px;
     font-family: 'Cinzel', serif;
     padding: 40px;
-  
-   
-}
-.form{
-    padding: 20px;
-    display: flex;
-    
-    
-    
-    
-    
+
+
 }
 
-.input{
-    
+.form {
+    padding: 20px;
+    display: flex;
+    margin-left: 15%;
+
+
+
+
+
+}
+
+.input {
+
     background-color: rgba(242, 105, 8, 0.676);
     box-shadow: 6px 6px 13px 0px black;
     width: 454px;
     height: 500px;
     margin-left: 90px;
-    
+
 }
-.input >h3{
-    color:black;
-   text-align: center;
+
+.input>h3 {
+    color: black;
+    text-align: center;
     font-size: 30px;
     font-family: 'Cinzel', serif;
     padding: 20px;
     margin-bottom: 20px;
-    
+
 }
-input,textarea{
+
+input, textarea,.form-bnt {
     padding-left: 10px;
     min-width: 300px;
     height: 40px;
@@ -358,8 +371,31 @@ input,textarea{
     border-radius: 5px;
     border: 1px solid;
     margin-top: 20px;
+    color:darkgray;
 }
-.select-options{
+textarea{
+    height: 100px;
+}
+.form-bnt{
+
+   
+    background-color:  rgba(242, 105, 8, 0.676);
+    border-radius: 1px;
+    font-size: 15px;
+  border: none;
+    color: black;
+    
+    
+    cursor: pointer;
+   
+}
+.form-bnt:hover{
+    border: 1px solid rgb(93, 93, 93);
+    background-color: #ffff;
+    color:  rgba(224, 96, 5, 0.934) ;
+  
+}
+.select-options {
 
     padding-left: 10px;
     min-width: 300px;
@@ -369,76 +405,180 @@ input,textarea{
     border-radius: 5px;
     border: 1px solid;
     margin-top: 20px;
+    color:darkgray;
+  outline: none;
 }
-.fale-form{
-    margin-left: 20%;
+
+.fale-form {
+    
     padding: 50px;
     margin-top: 50px;
+    margin-left: 5%;
+   
 }
-.fale-form > h2{
-    color:black;
+
+.fale-form>h2 {
+    color: black;
     text-align: center;
-     font-size: 30px;
-     font-family: 'Cinzel', serif;
-     padding: 20px;
-     margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    
 
 }
-.fale-form > p{
+.fale-conosco{
+
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(242, 106, 8);
+}
+
+.fale-form>p {
     font-size: 20px;
     justify-content: center;
 
 }
-.fale-form > ul,li{
 
- font-size: 20px;
+.fale-form>ul, li {
+
+    font-size: 20px;
     justify-content: center;
     list-style: none;
     margin-top: 15px;
     text-align: center;
 }
+.li-tel:hover{
+    color:  rgba(224, 96, 5, 0.934) ;
+}
 
-.rodape{
+
+
+.li-email:hover{
+    color:  rgba(224, 96, 5, 0.934) ;   
+}
+
+.li-img{
+    position: relative;
+    top: 5px;
+}
+
+.local{
+    background-image: url(Imagens/adoraçao-local.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: 6px 6px 13px 0px black;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+height: 100%;
+
+}
+.local::before{
+    content: "";
+    
+opacity: 0.35;
+}
+/*.overley{
+width: 100%;
+height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}*/
+.iframe-localizaçao>h2{
+    font-size: 50px;
+    color: #ffff;
+    text-align: center;
+    padding: 15px;
+}
+.iframe-localizaçao{
+   
+ 
+  touch-action: pan-x pan-y
+   
+}
+
+
+
+.rodape {
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom:5px;
-    
+    margin-bottom: 5px;
+    margin: 0;
+
 }
-.footer-endereço{
-    
-   padding: 25px;
-   text-align: center;
-}
-.footer-endereço > h3 {
-    
-    font-size: 25px;
-    
-}
-.footer-contato{
+
+.footer-endereço {
+
     padding: 25px;
     text-align: center;
-    
 }
 
-.footer-contato > h3{
+.footer-endereço>h3 {
 
-    
     font-size: 25px;
-
+    margin-bottom: 20px;
 }
-.footer-redes{
+
+.footer-contato {
     padding: 25px;
     text-align: center;
+    cursor: pointer;
 
 }
-.footer-redes >h3{
-    
+
+.footer-contato>h3 {
+
+
     font-size: 25px;
+    margin-bottom: 20px;
+
 }
+
+.footer-redes {
+    padding: 25px;
+    text-align: center;
+   
+
+}
+
+.footer-redes>h3 {
+
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 .footer-redes img {
     width: 50px;
     cursor: pointer;
+}
+.contatos-hover:hover{
+    color: rgba(224, 96, 5, 0.934);
+    scale: 1.1;
+    transition: 0.5;
+}
+.img-hover:hover{
+    scale: 1.6;
+    transition: 0.5;
+}
+.footer{
+    background-color: black;
+   padding: 15px;
+  
+    
+}
+.footer> p{
+        font-size: 12px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px;
+        background-color: black;
+        color: #ffff;
 }
