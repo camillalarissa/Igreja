@@ -474,12 +474,8 @@ textarea{
 height: 100%;
 
 }
-.local::before{
-    content: "";
-    
-opacity: 0.35;
-}
-/*.overley{
+
+.overley{
 width: 100%;
 height: 100%;
     position: absolute;
@@ -487,16 +483,21 @@ height: 100%;
     left: 0;
     background-color: black;
     opacity: 0.5;
-}*/
+    
+}
 .iframe-localizaçao>h2{
     font-size: 50px;
     color: #ffff;
     text-align: center;
     padding: 15px;
+    
+    
 }
 .iframe-localizaçao{
-   
- 
+   top:0px;
+   left: 0px;
+   z-index: 1;
+   position: relative;
   touch-action: pan-x pan-y
    
 }
