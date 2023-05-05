@@ -335,7 +335,7 @@ section>img {
 .form {
     padding: 50px;
     display: flex;
-    margin-left: ;
+    
     background-color: rgba(242, 105, 8, 0.676);
 
     box-shadow: 6px 6px 13px 0px black;
@@ -456,13 +456,13 @@ textarea {
 }
 
 .li-tel:hover {
-    color: rgba(224, 96, 5, 0.934);
+    color: rgb(247, 104, 2);
 }
 
 
 
 .li-email:hover {
-    color: rgba(224, 96, 5, 0.934);
+    color: rgb(242, 104, 2);
 }
 
 .li-img {
