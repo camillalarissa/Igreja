@@ -186,6 +186,7 @@ header>nav {
 
     font-family: 'Cinzel', serif;
     font-size: 40px;
+    z-index: 1;
 
 
 
@@ -200,7 +201,7 @@ header>nav {
     border-bottom: 2px solid rgb(242, 106, 8);
     margin-top: 15px;
     font-size: large;
-
+z-index: 1;
 }
 
 .somos>p {
